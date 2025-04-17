@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #098df3; /* Light blue background */
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding-left: 50px;
+    position: relative;
+}
+
+.company-name {
+    font-size: 3rem;
+    color: #32cd32; /* Light green color for company name */
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.login-selection {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #32cd32;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Stethoscope in the background */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    width: 200px;
+    height: 200px;
+    background-image: url('stethoscope.png'); /* Light gray stethoscope */
+    background-size: cover;
+    opacity: 0.2;
+    transform: translate(-50%, -50%);
+}
+
+/* Role selection */
+#role-selection {
+    margin-top: 20px;
+}
+
+#login-form, #signup-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 300px;
+}
+
+input {
+    display: block;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
